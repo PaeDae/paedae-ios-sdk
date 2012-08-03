@@ -1,4 +1,4 @@
 paedae-ios-sdk
 ==============
 
-PaeDae's iOS SDK
+See: http://apps.paedae.com/docs/ios
