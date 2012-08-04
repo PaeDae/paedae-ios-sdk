@@ -27,17 +27,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
 	
-	NSString *paedaeKey = @"345ad9b0-5874-012f-c816-12313f04f84c";
-	NSDictionary *playerDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									@"My Name", @"name",
-									@"2/25/1901", @"birthdate",
-									@"male", @"gender",
-									@"90019", @"zipcode",
-									@"123.567", @"latitude",
-									@"-144.1234", @"longitude",
-									nil];
-	[[PaeDaePrizeSDK sharedManager] initWithKey:paedaeKey andDelegate:self andPlayerInfo:playerDictionary];
-//	[[PaeDaePrizeSDK sharedManager] initWithKey:paedaeKey andPlayerInfo:playerDictionary];
+	[[PaeDaePrizeSDK sharedManager] initWithKey:@"b00015e0-5cf7-012f-c818-12313f04f84c" andDelegate:self];
 
 	self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
 	self.window.rootViewController = self.viewController;
