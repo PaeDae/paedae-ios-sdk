@@ -16,7 +16,7 @@
 		843AA77715B85B0100A10D4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AA77615B85B0100A10D4E /* ViewController.m */; };
 		843AA77A15B85B0100A10D4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843AA77815B85B0100A10D4E /* ViewController.xib */; };
 		843AA79B15B85E0600A10D4E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA79A15B85E0600A10D4E /* SystemConfiguration.framework */; };
-		960601D815CC91F8004934EB /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960601D715CC91F8004934EB /* libPaeDaePrizeSDK.a */; };
+		96A698AE15CD0AC800FCEFCD /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639C40315CD08A40045E3CF /* libPaeDaePrizeSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		843AA77615B85B0100A10D4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		843AA77915B85B0100A10D4E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		843AA79A15B85E0600A10D4E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		960601D715CC91F8004934EB /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
-		962B454C15CB3E62002962C4 /* PaeDaePrizeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaePrizeSDK.h; sourceTree = "<group>"; };
+		9639C40315CD08A40045E3CF /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
+		9639C40415CD08A40045E3CF /* PaeDaePrizeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaeDaePrizeSDK.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 				843AA76415B85B0100A10D4E /* UIKit.framework in Frameworks */,
 				843AA76615B85B0100A10D4E /* Foundation.framework in Frameworks */,
 				843AA76815B85B0100A10D4E /* CoreGraphics.framework in Frameworks */,
-				960601D815CC91F8004934EB /* libPaeDaePrizeSDK.a in Frameworks */,
+				96A698AE15CD0AC800FCEFCD /* libPaeDaePrizeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +110,8 @@
 		962B454A15CB3E62002962C4 /* PaeDaePrizeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				960601D715CC91F8004934EB /* libPaeDaePrizeSDK.a */,
-				962B454C15CB3E62002962C4 /* PaeDaePrizeSDK.h */,
+				9639C40315CD08A40045E3CF /* libPaeDaePrizeSDK.a */,
+				9639C40415CD08A40045E3CF /* PaeDaePrizeSDK.h */,
 			);
 			path = PaeDaePrizeSDK;
 			sourceTree = "<group>";
