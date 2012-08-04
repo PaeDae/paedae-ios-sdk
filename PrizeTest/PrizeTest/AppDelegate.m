@@ -29,8 +29,6 @@
 	
 	NSString *paedaeKey = @"345ad9b0-5874-012f-c816-12313f04f84c";
 	NSDictionary *playerDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									@"1", @"player_id",
-									@"junk@junk.com", @"email",
 									@"My Name", @"name",
 									@"2/25/1901", @"birthdate",
 									@"male", @"gender",

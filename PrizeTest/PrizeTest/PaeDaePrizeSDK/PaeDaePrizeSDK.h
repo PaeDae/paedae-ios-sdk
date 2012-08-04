@@ -47,8 +47,6 @@
 - (void) showPrizeWithDelegate:(id <PaeDaePrizeDelegate>)delegate;
 - (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary andDelegate:(id <PaeDaePrizeDelegate>)delegate;
 
-- (void) rotateToOrientation:(UIInterfaceOrientation)interfaceOrientation;
-
 +(PaeDaePrizeSDK *)sharedManager;
 
 

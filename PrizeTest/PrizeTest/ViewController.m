@@ -22,12 +22,14 @@
     [super viewDidUnload];
 }
 
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	[[PaeDaePrizeSDK sharedManager] rotateToOrientation:interfaceOrientation];
-	return YES;
+    NSLog(@"About to rotate screen");
+	
+    return YES;
 }
-
+    
 - (IBAction)showSmallPrizeTopTapped:(id)sender	{
 	
 	NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
