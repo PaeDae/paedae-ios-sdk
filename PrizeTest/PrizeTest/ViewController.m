@@ -50,11 +50,7 @@
 }
 
 - (IBAction)showLargePrizeTapped:(id)sender	{
-	NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-//									 @"com.my.achievement", @"achievement_id",
-									 @"large", @"size",
-									 nil];
-	[[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
+	[[PaeDaePrizeSDK sharedManager] showPrizeWithDelegate:self];
 
 }
 
@@ -72,7 +68,7 @@
 	[[PaeDaePrizeSDK sharedManager] updatePlayerInfo:playerDictionary];
 }
 
-- (void)PaeDae_prizeWillDisplay:(bool)isLarge	{
+- (void)PaeDae_PrizeWillDisplay:(bool)isLarge	{
 	if ( isLarge )
 		NSLog(@"about to push the full screen");
 	else
@@ -80,7 +76,7 @@
 	
 }
 
-- (void)PaeDae_prizeUnloaded	{
+- (void)PaeDae_PrizeUnloaded	{
 	NSLog(@"prize unloaded");
 }
 

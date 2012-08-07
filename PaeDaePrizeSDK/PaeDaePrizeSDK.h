@@ -28,8 +28,6 @@
 
 @end
 
-
-
 @protocol PaeDaeInitDelegate;
 @protocol PaeDaePrizeDelegate;
 
@@ -49,7 +47,6 @@
 
 +(PaeDaePrizeSDK *)sharedManager;
 
-
 @property (nonatomic, assign) id <PaeDaeInitDelegate> initDelegate;
 @property (nonatomic, assign) id <PaeDaePrizeDelegate> prizeDelegate;
 @end
@@ -62,8 +59,8 @@
 
 @protocol PaeDaePrizeDelegate <NSObject>
 @optional
-- (void) PaeDae_prizeWillDisplay:(bool)isLarge;
-- (void) PaeDae_prizeUnloaded;
+- (void) PaeDae_PrizeWillDisplay:(bool)isLarge;
+- (void) PaeDae_PrizeUnloaded;
 @end
 
 
