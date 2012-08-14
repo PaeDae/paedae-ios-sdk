@@ -2,65 +2,45 @@
 //  PaeDaePrizeSDK.h
 //  PaeDaePrizeSDK
 //
+//  Created by PaeDae on 8/13/12.
+//  Copyright (c) 2012 PaeDae. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 
-@protocol PaeDaeNetworkAccessDelegate;
-
-@interface PaeDaeNetworkAccess : NSObject
-
-- (bool)sendHTTPRequest:(NSDictionary *)parms;
-
-@property (nonatomic, assign) id <PaeDaeNetworkAccessDelegate> networkClientDelegate;
-
-@end
-
-@protocol PaeDaeNetworkAccessDelegate <NSObject>
-
-- (void) PaeDaeInitSucceeded;
-- (void) PaeDaeInitFailed;
-- (void) PaeDaePrizeOffer:(NSString*)prizeSize:(NSString*)prizePlacement:(NSString*)prizeId;
-- (void) PaeDaeNoPrizeOffer;
-@optional
-- (void) PaeDaeConnectionDidFailWithError:(NSError *)error:(NSDictionary*)requestDict;
-
-@end
-
-@protocol PaeDaeInitDelegate;
-@protocol PaeDaePrizeDelegate;
-
-@interface PaeDaePrizeSDK : UIView <UIWebViewDelegate, PaeDaeNetworkAccessDelegate, UIGestureRecognizerDelegate>
-
-- (PaeDaePrizeSDK*) initWithKey:(NSString*)key;
-- (PaeDaePrizeSDK*) initWithKey:(NSString*)key andPlayerInfo:(NSDictionary*)playerInfo;
-- (PaeDaePrizeSDK*) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate;
-- (PaeDaePrizeSDK*) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate andPlayerInfo:(NSDictionary*)playerInfo;
-
-- (void) updatePlayerInfo:(NSDictionary*)playerInfo;
-
-- (void) showPrize;
-- (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary;
-- (void) showPrizeWithDelegate:(id <PaeDaePrizeDelegate>)delegate;
-- (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary andDelegate:(id <PaeDaePrizeDelegate>)delegate;
-
-+(PaeDaePrizeSDK *)sharedManager;
-
-@property (nonatomic, assign) id <PaeDaeInitDelegate> initDelegate;
-@property (nonatomic, assign) id <PaeDaePrizeDelegate> prizeDelegate;
-@end
-
+#pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
 @optional
 - (void) PaeDae_Initialized;
 - (void) PaeDae_InitializeFailed;
 @end
 
+#pragma mark - prize display delegate
 @protocol PaeDaePrizeDelegate <NSObject>
 @optional
 - (void) PaeDae_PrizeWillDisplay:(bool)isLarge;
 - (void) PaeDae_PrizeUnloaded;
 @end
 
+@interface PaeDaePrizeSDK : NSObject
+#pragma mark - shared manager
++(PaeDaePrizeSDK *) sharedManager;
+
+#pragma mark - bootstrap API definitions
+- (void) initWithKey:(NSString*)key;
+- (void) initWithKey:(NSString*)key andPlayerInfo:(NSDictionary*)playerInfo;
+- (void) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate;
+- (void) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate andPlayerInfo:(NSDictionary*)playerInfo;
+
+#pragma mark - update player info API definitions
+- (void) updatePlayerInfo:(NSDictionary*)playerInfo;
+
+#pragma mark - show prize API definitions
+- (void) showPrize;
+- (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary;
+- (void) showPrizeWithDelegate:(id <PaeDaePrizeDelegate>)delegate;
+- (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary andDelegate:(id <PaeDaePrizeDelegate>)delegate;
+
+@end
 
