@@ -64,10 +64,12 @@
 
 - (void)PaeDae_Initialized	{
 	NSLog(@"init successful");
+    [self.viewController.statusLabel setText:@"PaeDae SDK Loaded"];
 }
 
 - (void)PaeDae_InitializeFailed	{
 	NSLog(@"init failed");
+    [self.viewController.statusLabel setText:@"PaeDae SDK Failed to Load"];
 }
 
 

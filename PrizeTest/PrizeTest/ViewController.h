@@ -7,17 +7,21 @@
 #import <UIKit/UIKit.h>
 #import "PaeDaePrizeSDK.h"
 
-@interface ViewController : UIViewController <PaeDaePrizeDelegate>
+@interface ViewController : UIViewController <PaeDaePrizeDelegate, UITextFieldDelegate>
 {
-//	@private
-//	PaeDaePrizeSDK *paedaePrizeClient;
+    NSString *achievementId;
+    UILabel *statusLabel;
 }
 
-//@property (nonatomic, retain) PaeDaePrizeSDK *paedaePrizeClient;
+- (IBAction) showSmallPrizeTopTapped:(id)sender;
+- (IBAction) showSmallPrizeBottomTapped:(id)sender;
+- (IBAction) showLargePrizeTapped:(id)sender;
+- (IBAction) level1Pressed:(id)sender;
+- (IBAction) level2Pressed:(id)sender;
+- (IBAction) level3Pressed:(id)sender;
+- (IBAction) updateInformationTapped:(id)sender;
 
-- (IBAction)showSmallPrizeTopTapped:(id)sender;
-- (IBAction)showSmallPrizeBottomTapped:(id)sender;
-- (IBAction)showLargePrizeTapped:(id)sender;
-- (IBAction)updateInformationTapped:(id)sender;
-
+@property (nonatomic, retain) NSString *achievementId;
+@property (nonatomic, retain) IBOutlet UILabel *statusLabel;
+  
 @end

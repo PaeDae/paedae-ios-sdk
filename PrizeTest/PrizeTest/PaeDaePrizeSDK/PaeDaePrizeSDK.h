@@ -26,6 +26,10 @@
 @interface PaeDaePrizeSDK : NSObject
 #pragma mark - shared manager
 +(PaeDaePrizeSDK *) sharedManager;
+@property (nonatomic, assign) BOOL bootstrapped;
+@property (nonatomic, assign) BOOL enabled;
+@property (nonatomic, assign) id <PaeDaeInitDelegate>initDelegate;
+@property (nonatomic, assign) id <PaeDaePrizeDelegate>prizeDelegate;
 
 #pragma mark - bootstrap API definitions
 - (void) initWithKey:(NSString*)key;
