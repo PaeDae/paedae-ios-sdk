@@ -9,8 +9,8 @@
 
 @interface ViewController : UIViewController <PaeDaePrizeDelegate, UITextFieldDelegate>
 {
-    NSString *achievementId;
     UILabel *statusLabel;
+    IBOutlet UITextField *achievementTextView;
 }
 
 - (IBAction) showSmallPrizeTopTapped:(id)sender;
@@ -20,8 +20,11 @@
 - (IBAction) level2Pressed:(id)sender;
 - (IBAction) level3Pressed:(id)sender;
 - (IBAction) updateInformationTapped:(id)sender;
+- (IBAction) delayedPrizePressed:(id)sender;
+- (IBAction) showDummyController:(id)sender;
+- (IBAction) showLandscapeController:(id)sender;
 
-@property (nonatomic, retain) NSString *achievementId;
 @property (nonatomic, retain) IBOutlet UILabel *statusLabel;
-  
+@property (nonatomic, retain) IBOutlet UITextField *achievementTextView;  
+
 @end

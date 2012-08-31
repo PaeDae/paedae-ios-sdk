@@ -2,9 +2,8 @@
 //  AppDelegate.m
 //  PrizeTest
 //
-//  Created by Bardwick David on 7/19/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+//  Created by Miguel Morales on 7/19/12.
+//  Copyright (c) 2012 PaeDae Inc. All rights reserved.
 
 #import "AppDelegate.h"
 
@@ -29,9 +28,10 @@
 	
 	[[PaeDaePrizeSDK sharedManager] initWithKey:@"b00015e0-5cf7-012f-c818-12313f04f84c" andDelegate:self];
 
-	self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

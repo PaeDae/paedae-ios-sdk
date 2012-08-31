@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
@@ -19,17 +19,14 @@
 #pragma mark - prize display delegate
 @protocol PaeDaePrizeDelegate <NSObject>
 @optional
-- (void) PaeDae_PrizeWillDisplay:(bool)isLarge;
+- (void) PaeDae_PrizeWillDisplay:(UIView *)view;
+- (BOOL) PaeDae_PrizeWillUnload:(UIView *)view;
 - (void) PaeDae_PrizeUnloaded;
 @end
 
 @interface PaeDaePrizeSDK : NSObject
 #pragma mark - shared manager
 +(PaeDaePrizeSDK *) sharedManager;
-@property (nonatomic, assign) BOOL bootstrapped;
-@property (nonatomic, assign) BOOL enabled;
-@property (nonatomic, assign) id <PaeDaeInitDelegate>initDelegate;
-@property (nonatomic, assign) id <PaeDaePrizeDelegate>prizeDelegate;
 
 #pragma mark - bootstrap API definitions
 - (void) initWithKey:(NSString*)key;
@@ -46,5 +43,16 @@
 - (void) showPrizeWithDelegate:(id <PaeDaePrizeDelegate>)delegate;
 - (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary andDelegate:(id <PaeDaePrizeDelegate>)delegate;
 
+- (void) setOrientation:(UIInterfaceOrientation) orientation;
+
+#pragma mark - unsupported API calls (do not use)
+@property (nonatomic, assign) BOOL bootstrapped;
+@property (nonatomic, assign) BOOL enabled;
+@property (nonatomic, retain) id <PaeDaeInitDelegate>initDelegate;
+@property (nonatomic, retain) id <PaeDaePrizeDelegate>prizeDelegate;
+@property (nonatomic, retain) UIViewController *controller;
+
+- (void) reloadWebCache;
+- (void) clearHistory;
 @end
 

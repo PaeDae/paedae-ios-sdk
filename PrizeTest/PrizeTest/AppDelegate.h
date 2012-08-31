@@ -2,9 +2,8 @@
 //  AppDelegate.h
 //  PrizeTest
 //
-//  Created by Bardwick David on 7/19/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+//  Created by Miguel Morales on 7/19/12.
+//  Copyright (c) 2012 PaeDae Inc. All rights reserved.
 
 #import <UIKit/UIKit.h>
 #import "PaeDaePrizeSDK.h"
