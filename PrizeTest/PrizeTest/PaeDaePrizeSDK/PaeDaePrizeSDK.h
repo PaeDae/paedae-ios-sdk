@@ -19,7 +19,7 @@
 #pragma mark - prize display delegate
 @protocol PaeDaePrizeDelegate <NSObject>
 @optional
-- (BOOL) PaeDae_PrizeWillDisplay:(UIView *)view;
+- (void) PaeDae_PrizeWillDisplay:(UIView *)view;
 - (BOOL) PaeDae_PrizeWillUnload:(UIView *)view;
 - (void) PaeDae_PrizeUnloaded;
 @end
