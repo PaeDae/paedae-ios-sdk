@@ -19,7 +19,7 @@
 #pragma mark - prize display delegate
 @protocol PaeDaePrizeDelegate <NSObject>
 @optional
-- (void) PaeDae_PrizeWillDisplay:(UIView *)view;
+- (BOOL) PaeDae_PrizeWillDisplay:(UIView *)view;
 - (BOOL) PaeDae_PrizeWillUnload:(UIView *)view;
 - (void) PaeDae_PrizeUnloaded;
 @end
@@ -44,6 +44,9 @@
 - (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary andDelegate:(id <PaeDaePrizeDelegate>)delegate;
 
 - (void) setOrientation:(UIInterfaceOrientation) orientation;
+
+#pragma mark - support properties
+@property (nonatomic, retain) UIView *anchorView;
 
 #pragma mark - unsupported API calls (do not use)
 @property (nonatomic, assign) BOOL bootstrapped;

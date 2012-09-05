@@ -59,6 +59,9 @@
 {
     [super viewDidLoad];
     
+    [PaeDaePrizeSDK sharedManager].anchorView = self.view;
+    [[PaeDaePrizeSDK sharedManager] showPrizeWithDelegate:self];
+
 }
 
 - (void)viewDidUnload

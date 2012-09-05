@@ -20,7 +20,7 @@
 		9637FBAC15F052B600F411BD /* FixedOrientationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9637FBAA15F052B600F411BD /* FixedOrientationViewController.xib */; };
 		965A275C15EDDE2700888992 /* DummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 965A275A15EDDE2700888992 /* DummyViewController.m */; };
 		965A275D15EDDE2700888992 /* DummyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A275B15EDDE2700888992 /* DummyViewController.xib */; };
-		96A698AE15CD0AC800FCEFCD /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9639C40315CD08A40045E3CF /* libPaeDaePrizeSDK.a */; };
+		96642E2115F74CAF00D4D081 /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */; };
 		96CBE11F15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBE11E15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +42,11 @@
 		9637FBA815F052B600F411BD /* FixedOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedOrientationViewController.h; sourceTree = "<group>"; };
 		9637FBA915F052B600F411BD /* FixedOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedOrientationViewController.m; sourceTree = "<group>"; };
 		9637FBAA15F052B600F411BD /* FixedOrientationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedOrientationViewController.xib; sourceTree = "<group>"; };
-		9639C40315CD08A40045E3CF /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
-		9639C40415CD08A40045E3CF /* PaeDaePrizeSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaeDaePrizeSDK.h; sourceTree = "<group>"; };
 		965A275915EDDE2700888992 /* DummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyViewController.h; sourceTree = "<group>"; };
 		965A275A15EDDE2700888992 /* DummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyViewController.m; sourceTree = "<group>"; };
 		965A275B15EDDE2700888992 /* DummyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DummyViewController.xib; sourceTree = "<group>"; };
+		96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
+		96642E2015F74CAF00D4D081 /* PaeDaePrizeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaePrizeSDK.h; sourceTree = "<group>"; };
 		96CBE11D15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaeSharedPrizeDelegate.h; sourceTree = "<group>"; };
 		96CBE11E15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaeDaeSharedPrizeDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +60,7 @@
 				843AA76415B85B0100A10D4E /* UIKit.framework in Frameworks */,
 				843AA76615B85B0100A10D4E /* Foundation.framework in Frameworks */,
 				843AA76815B85B0100A10D4E /* CoreGraphics.framework in Frameworks */,
-				96A698AE15CD0AC800FCEFCD /* libPaeDaePrizeSDK.a in Frameworks */,
+				96642E2115F74CAF00D4D081 /* libPaeDaePrizeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,8 +130,8 @@
 		962B454A15CB3E62002962C4 /* PaeDaePrizeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				9639C40315CD08A40045E3CF /* libPaeDaePrizeSDK.a */,
-				9639C40415CD08A40045E3CF /* PaeDaePrizeSDK.h */,
+				96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */,
+				96642E2015F74CAF00D4D081 /* PaeDaePrizeSDK.h */,
 			);
 			path = PaeDaePrizeSDK;
 			sourceTree = "<group>";
