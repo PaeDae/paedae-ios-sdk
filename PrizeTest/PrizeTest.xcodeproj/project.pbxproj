@@ -16,10 +16,6 @@
 		843AA77715B85B0100A10D4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AA77615B85B0100A10D4E /* ViewController.m */; };
 		843AA77A15B85B0100A10D4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843AA77815B85B0100A10D4E /* ViewController.xib */; };
 		843AA79B15B85E0600A10D4E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA79A15B85E0600A10D4E /* SystemConfiguration.framework */; };
-		9637FBAB15F052B600F411BD /* FixedOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9637FBA915F052B600F411BD /* FixedOrientationViewController.m */; };
-		9637FBAC15F052B600F411BD /* FixedOrientationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9637FBAA15F052B600F411BD /* FixedOrientationViewController.xib */; };
-		965A275C15EDDE2700888992 /* DummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 965A275A15EDDE2700888992 /* DummyViewController.m */; };
-		965A275D15EDDE2700888992 /* DummyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965A275B15EDDE2700888992 /* DummyViewController.xib */; };
 		96642E2115F74CAF00D4D081 /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */; };
 		96CBE11F15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBE11E15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m */; };
 /* End PBXBuildFile section */
@@ -39,12 +35,6 @@
 		843AA77615B85B0100A10D4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		843AA77915B85B0100A10D4E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		843AA79A15B85E0600A10D4E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		9637FBA815F052B600F411BD /* FixedOrientationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedOrientationViewController.h; sourceTree = "<group>"; };
-		9637FBA915F052B600F411BD /* FixedOrientationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedOrientationViewController.m; sourceTree = "<group>"; };
-		9637FBAA15F052B600F411BD /* FixedOrientationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FixedOrientationViewController.xib; sourceTree = "<group>"; };
-		965A275915EDDE2700888992 /* DummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyViewController.h; sourceTree = "<group>"; };
-		965A275A15EDDE2700888992 /* DummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyViewController.m; sourceTree = "<group>"; };
-		965A275B15EDDE2700888992 /* DummyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DummyViewController.xib; sourceTree = "<group>"; };
 		96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
 		96642E2015F74CAF00D4D081 /* PaeDaePrizeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaePrizeSDK.h; sourceTree = "<group>"; };
 		96CBE11D15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaeSharedPrizeDelegate.h; sourceTree = "<group>"; };
@@ -105,12 +95,6 @@
 				843AA77515B85B0100A10D4E /* ViewController.h */,
 				843AA77615B85B0100A10D4E /* ViewController.m */,
 				843AA77815B85B0100A10D4E /* ViewController.xib */,
-				965A275915EDDE2700888992 /* DummyViewController.h */,
-				965A275A15EDDE2700888992 /* DummyViewController.m */,
-				965A275B15EDDE2700888992 /* DummyViewController.xib */,
-				9637FBA815F052B600F411BD /* FixedOrientationViewController.h */,
-				9637FBA915F052B600F411BD /* FixedOrientationViewController.m */,
-				9637FBAA15F052B600F411BD /* FixedOrientationViewController.xib */,
 				843AA76A15B85B0100A10D4E /* Supporting Files */,
 			);
 			path = PrizeTest;
@@ -197,8 +181,6 @@
 			files = (
 				843AA76E15B85B0100A10D4E /* InfoPlist.strings in Resources */,
 				843AA77A15B85B0100A10D4E /* ViewController.xib in Resources */,
-				965A275D15EDDE2700888992 /* DummyViewController.xib in Resources */,
-				9637FBAC15F052B600F411BD /* FixedOrientationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +194,6 @@
 				843AA77015B85B0100A10D4E /* main.m in Sources */,
 				843AA77415B85B0100A10D4E /* AppDelegate.m in Sources */,
 				843AA77715B85B0100A10D4E /* ViewController.m in Sources */,
-				965A275C15EDDE2700888992 /* DummyViewController.m in Sources */,
-				9637FBAB15F052B600F411BD /* FixedOrientationViewController.m in Sources */,
 				96CBE11F15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

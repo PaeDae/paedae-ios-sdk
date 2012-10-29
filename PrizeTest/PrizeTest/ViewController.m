@@ -5,8 +5,6 @@
 //
 
 #import "ViewController.h"
-#import "DummyViewController.h"
-#import "FixedOrientationViewController.h"
 
 @interface ViewController ()
 
@@ -41,31 +39,8 @@
 	
     return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
-    
-- (IBAction)showSmallPrizeTopTapped:(id)sender	{
-	NSLog(@"%s - called", __FUNCTION__);
-	NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									 achievementTextView.text, @"achievement_id",
-									 @"small", @"size",
-									 @"top", @"placement",
-									 nil];
-    
-    NSLog(@"%s - prize dictionary: %@", __FUNCTION__, prizeDictionary);
-	[[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
-}
-
-- (IBAction)showSmallPrizeBottomTapped:(id)sender	{
-    NSLog(@"%s - called", __FUNCTION__);
-	NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									 achievementTextView.text, @"achievement_id",
-									 @"small", @"size",
-									 @"bottom", @"placement",
-									 nil];
-    NSLog(@"%s - prize dictionary: %@", __FUNCTION__, prizeDictionary);
-	[[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
-}
-
-- (IBAction)showLargePrizeTapped:(id)sender	{
+ 
+- (IBAction)showPrizePressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
     
     NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -102,20 +77,8 @@
 	[[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
 }
 
-#pragma mark - show delayed prize example
-- (IBAction) delayedPrizePressed:(id)sender {
-    NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									 @"5", @"delay",
-									 nil];
-    
-    NSLog(@"%s - prize dictionary: %@", __FUNCTION__, prizeDictionary);
-	
-    [[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];        
-}
-
 #pragma mark - update player information example
-- (IBAction)updateInformationTapped:(id)sender	{
+- (IBAction)updateInformationPressed:(id)sender	{
     
 	NSDictionary *playerDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                       @"junk@junk.com", @"email",
@@ -127,27 +90,6 @@
                                       @"-144.1234", @"longitude",
                                       nil];
 	[[PaeDaePrizeSDK sharedManager] updatePlayerInfo:playerDictionary];
-}
-
-# pragma mark - show the dummy controller for more examples
-- (IBAction)showDummyController:(id)sender
-{
-    UIViewController *controller = [[DummyViewController alloc] initWithNibName:@"DummyViewController" bundle:nil];
-    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-
-    [self presentModalViewController:controller animated:YES];
-    
-    [controller release];
-}
-
-#pragma mark -
-- (IBAction) showLandscapeController:(id)sender {
-    UIViewController *controller = [[FixedOrientationViewController alloc] initWithNibName:@"FixedOrientationViewController" bundle:nil];
-    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    
-    [self presentModalViewController:controller animated:YES];
-    
-    [controller release];
 }
 
 #pragma mark - hide keyboard when finished editing the achievement id
