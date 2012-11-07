@@ -4,12 +4,12 @@
 //
 //  Created by PaeDae on 8/13/12.
 //  Copyright (c) 2012 PaeDae. All rights reserved.
-//  Version 0.3.1
+//  Version 0.3.2
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION 0.3.1
+#define PAEDAE_SDK_VERSION @"0.3.2"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
