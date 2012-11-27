@@ -37,7 +37,7 @@
 {
     NSLog(@"About to rotate screen");
 	
-    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+    return YES;
 }
  
 - (IBAction)showPrizePressed:(id)sender	{

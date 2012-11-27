@@ -17,19 +17,10 @@
 		843AA77A15B85B0100A10D4E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843AA77815B85B0100A10D4E /* ViewController.xib */; };
 		843AA79B15B85E0600A10D4E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA79A15B85E0600A10D4E /* SystemConfiguration.framework */; };
 		96642E2115F74CAF00D4D081 /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */; };
-		969BD4BE164642C100AC9872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AA76F15B85B0100A10D4E /* main.m */; };
-		969BD4BF164642C100AC9872 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AA77315B85B0100A10D4E /* AppDelegate.m */; };
-		969BD4C0164642C100AC9872 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843AA77615B85B0100A10D4E /* ViewController.m */; };
-		969BD4C1164642C100AC9872 /* PaeDaeSharedPrizeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBE11E15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m */; };
-		969BD4C3164642C100AC9872 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA79A15B85E0600A10D4E /* SystemConfiguration.framework */; };
-		969BD4C4164642C100AC9872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA76315B85B0100A10D4E /* UIKit.framework */; };
-		969BD4C5164642C100AC9872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA76515B85B0100A10D4E /* Foundation.framework */; };
-		969BD4C6164642C100AC9872 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA76715B85B0100A10D4E /* CoreGraphics.framework */; };
-		969BD4C7164642C100AC9872 /* libPaeDaePrizeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */; };
-		969BD4C9164642C100AC9872 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 843AA76C15B85B0100A10D4E /* InfoPlist.strings */; };
-		969BD4CA164642C100AC9872 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843AA77815B85B0100A10D4E /* ViewController.xib */; };
-		969BD4D2164642E600AC9872 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645C44E16409B0B003D6753 /* AdSupport.framework */; };
 		96CBE11F15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CBE11E15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m */; };
+		96ED3DDD16640FBA003FEA94 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645C44E16409B0B003D6753 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		96ED3DE016640FCF003FEA94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96ED3DDE16640FC6003FEA94 /* CoreLocation.framework */; };
+		96ED3DE316640FF0003FEA94 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96ED3DE116640FE5003FEA94 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,10 +41,11 @@
 		9645C44E16409B0B003D6753 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		96642E1F15F74CAF00D4D081 /* libPaeDaePrizeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaeDaePrizeSDK.a; sourceTree = "<group>"; };
 		96642E2015F74CAF00D4D081 /* PaeDaePrizeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaePrizeSDK.h; sourceTree = "<group>"; };
-		969BD4CE164642C100AC9872 /* PrizeTest iOS6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PrizeTest iOS6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		969BD4D0164642C100AC9872 /* PrizeTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "PrizeTest-Info.plist"; path = "/Users/paedae/Documents/PaeDae/paedae-ios-sdk/PrizeTest/PrizeTest-Info.plist"; sourceTree = "<absolute>"; };
 		96CBE11D15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaeDaeSharedPrizeDelegate.h; sourceTree = "<group>"; };
 		96CBE11E15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaeDaeSharedPrizeDelegate.m; sourceTree = "<group>"; };
+		96ED3DDE16640FC6003FEA94 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		96ED3DE116640FE5003FEA94 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,24 +53,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96ED3DDD16640FBA003FEA94 /* AdSupport.framework in Frameworks */,
+				96ED3DE316640FF0003FEA94 /* QuartzCore.framework in Frameworks */,
 				843AA79B15B85E0600A10D4E /* SystemConfiguration.framework in Frameworks */,
 				843AA76415B85B0100A10D4E /* UIKit.framework in Frameworks */,
+				96ED3DE016640FCF003FEA94 /* CoreLocation.framework in Frameworks */,
 				843AA76615B85B0100A10D4E /* Foundation.framework in Frameworks */,
 				843AA76815B85B0100A10D4E /* CoreGraphics.framework in Frameworks */,
 				96642E2115F74CAF00D4D081 /* libPaeDaePrizeSDK.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		969BD4C2164642C100AC9872 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				969BD4D2164642E600AC9872 /* AdSupport.framework in Frameworks */,
-				969BD4C3164642C100AC9872 /* SystemConfiguration.framework in Frameworks */,
-				969BD4C4164642C100AC9872 /* UIKit.framework in Frameworks */,
-				969BD4C5164642C100AC9872 /* Foundation.framework in Frameworks */,
-				969BD4C6164642C100AC9872 /* CoreGraphics.framework in Frameworks */,
-				969BD4C7164642C100AC9872 /* libPaeDaePrizeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				843AA75F15B85B0100A10D4E /* PrizeTest.app */,
-				969BD4CE164642C100AC9872 /* PrizeTest iOS6.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +88,8 @@
 		843AA76215B85B0100A10D4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96ED3DE116640FE5003FEA94 /* QuartzCore.framework */,
+				96ED3DDE16640FC6003FEA94 /* CoreLocation.framework */,
 				9645C44E16409B0B003D6753 /* AdSupport.framework */,
 				843AA79A15B85E0600A10D4E /* SystemConfiguration.framework */,
 				843AA76315B85B0100A10D4E /* UIKit.framework */,
@@ -180,23 +163,6 @@
 			productReference = 843AA75F15B85B0100A10D4E /* PrizeTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		969BD4BC164642C100AC9872 /* PrizeTest iOS6 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 969BD4CB164642C100AC9872 /* Build configuration list for PBXNativeTarget "PrizeTest iOS6" */;
-			buildPhases = (
-				969BD4BD164642C100AC9872 /* Sources */,
-				969BD4C2164642C100AC9872 /* Frameworks */,
-				969BD4C8164642C100AC9872 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PrizeTest iOS6";
-			productName = PrizeTest;
-			productReference = 969BD4CE164642C100AC9872 /* PrizeTest iOS6.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,7 +184,6 @@
 			projectRoot = "";
 			targets = (
 				843AA75E15B85B0100A10D4E /* PrizeTest */,
-				969BD4BC164642C100AC9872 /* PrizeTest iOS6 */,
 			);
 		};
 /* End PBXProject section */
@@ -233,15 +198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		969BD4C8164642C100AC9872 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				969BD4C9164642C100AC9872 /* InfoPlist.strings in Resources */,
-				969BD4CA164642C100AC9872 /* ViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -253,17 +209,6 @@
 				843AA77415B85B0100A10D4E /* AppDelegate.m in Sources */,
 				843AA77715B85B0100A10D4E /* ViewController.m in Sources */,
 				96CBE11F15F08F030011ABD5 /* PaeDaeSharedPrizeDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		969BD4BD164642C100AC9872 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				969BD4BE164642C100AC9872 /* main.m in Sources */,
-				969BD4BF164642C100AC9872 /* AppDelegate.m in Sources */,
-				969BD4C0164642C100AC9872 /* ViewController.m in Sources */,
-				969BD4C1164642C100AC9872 /* PaeDaeSharedPrizeDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,66 +353,6 @@
 			};
 			name = Release;
 		};
-		969BD4CC164642C100AC9872 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_OBJCPP_ARC_ABI = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrizeTest/PrizeTest-Prefix.pch";
-				INFOPLIST_FILE = "PrizeTest/PrizeTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/PrizeTest\"",
-					"\"$(SRCROOT)/PaeDaePrizeSDK\"",
-					"\"$(SRCROOT)/PrizeTest/PaeDaePrizeSDK\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-lz",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "PrizeTest iOS6";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv6 armv7 armv7s";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		969BD4CD164642C100AC9872 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_OBJCPP_ARC_ABI = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PrizeTest/PrizeTest-Prefix.pch";
-				INFOPLIST_FILE = "PrizeTest/PrizeTest-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/PrizeTest\"",
-					"\"$(SRCROOT)/PaeDaePrizeSDK\"",
-					"\"$(SRCROOT)/PrizeTest/PaeDaePrizeSDK\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-lz",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "PrizeTest iOS6";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv6 armv7 armv7s";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -485,15 +370,6 @@
 			buildConfigurations = (
 				843AA77E15B85B0100A10D4E /* Debug */,
 				843AA77F15B85B0100A10D4E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		969BD4CB164642C100AC9872 /* Build configuration list for PBXNativeTarget "PrizeTest iOS6" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				969BD4CC164642C100AC9872 /* Debug */,
-				969BD4CD164642C100AC9872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

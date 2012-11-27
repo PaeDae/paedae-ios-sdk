@@ -190,7 +190,7 @@
 						<string key="NSFrame">{{210, 159}, {96, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="1062643736"/>
 						<string key="NSReuseIdentifierKey">_NS:225</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -317,12 +317,12 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">updateInformationTapped:</string>
+						<string key="label">updateInformationPressed:</string>
 						<reference key="source" ref="1062643736"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">16</int>
+					<int key="connectionID">64</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -474,7 +474,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">63</int>
+			<int key="maxID">64</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -486,7 +486,6 @@
 						<string key="level2Pressed:">id</string>
 						<string key="level3Pressed:">id</string>
 						<string key="onAchievementIdEdited:">UITextField</string>
-						<string key="showAnimatedControllerPressed:">id</string>
 						<string key="showPrizePressed:">id</string>
 						<string key="updateInformationPressed:">id</string>
 					</dictionary>
@@ -506,10 +505,6 @@
 						<object class="IBActionInfo" key="onAchievementIdEdited:">
 							<string key="name">onAchievementIdEdited:</string>
 							<string key="candidateClassName">UITextField</string>
-						</object>
-						<object class="IBActionInfo" key="showAnimatedControllerPressed:">
-							<string key="name">showAnimatedControllerPressed:</string>
-							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="showPrizePressed:">
 							<string key="name">showPrizePressed:</string>
