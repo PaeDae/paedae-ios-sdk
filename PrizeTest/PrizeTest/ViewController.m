@@ -114,5 +114,8 @@
 	NSLog(@"%s - prize unloaded", __FUNCTION__);
 }
 
+- (void)PaeDae_PrizeUnavailable {
+	NSLog(@"%s - prize unavailable", __FUNCTION__);
+}
 
 @end

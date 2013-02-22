@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION @"0.3.6"
+#define PAEDAE_SDK_VERSION @"0.3.7"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
@@ -20,6 +20,7 @@
 #pragma mark - prize display delegate
 @protocol PaeDaePrizeDelegate <NSObject>
 @optional
+- (void) PaeDae_PrizeUnavailable;
 - (void) PaeDae_PrizeWillDisplay:(UIView *)view;
 - (BOOL) PaeDae_PrizeWillUnload:(UIView *)view;
 - (void) PaeDae_PrizeUnloaded;
