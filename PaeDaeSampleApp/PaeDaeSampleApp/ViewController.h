@@ -5,18 +5,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PaeDaePrizeSDK.h"
+#import "PaeDaeSDK.h"
 
-@interface ViewController : UIViewController <PaeDaePrizeDelegate, UITextFieldDelegate>
+@interface ViewController : UIViewController <PaeDaeAdDelegate, UITextFieldDelegate>
 {
     UILabel *statusLabel;
     IBOutlet UITextField *achievementTextView;
 }
 
-- (IBAction) showPrizePressed:(id)sender;
-- (IBAction) level1Pressed:(id)sender;
-- (IBAction) level2Pressed:(id)sender;
-- (IBAction) level3Pressed:(id)sender;
+- (IBAction) showAdPressed:(id)sender;
+- (IBAction) showBartrPressed:(id)sender;
+- (IBAction) showRewardPressed:(id)sender;
 - (IBAction) updateInformationPressed:(id)sender;
 
 @property (nonatomic, retain) IBOutlet UILabel *statusLabel;

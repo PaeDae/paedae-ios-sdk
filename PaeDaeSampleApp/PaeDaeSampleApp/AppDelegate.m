@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  PrizeTest
 //
-//  Created by Bardwick David on 7/19/12.
+//  Created by PaeDae on 7/19/12.
 //  Copyright (c) 2012 PaeDae Inc. All rights reserved.
 
 #import "AppDelegate.h"
@@ -26,7 +26,7 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
 	
-	[[PaeDaePrizeSDK sharedManager] initWithKey:@"b00015e0-5cf7-012f-c818-12313f04f84c" andDelegate:self];
+	[[PaeDaeSDK sharedManager] initWithKey:@"b00015e0-5cf7-012f-c818-12313f04f84c" andDelegate:self];
 
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
 	self.window.rootViewController = self.viewController;
@@ -59,6 +59,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+    [[PaeDaeSDK sharedManager] finish];
 	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 

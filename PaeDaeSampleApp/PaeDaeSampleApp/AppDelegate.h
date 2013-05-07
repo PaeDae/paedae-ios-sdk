@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 PaeDae Inc. All rights reserved.
 
 #import <UIKit/UIKit.h>
-#import "PaeDaePrizeSDK.h"
+#import "PaeDaeSDK.h"
 
 @class ViewController;
 

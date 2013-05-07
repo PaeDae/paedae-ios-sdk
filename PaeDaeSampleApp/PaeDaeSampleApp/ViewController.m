@@ -40,41 +40,22 @@
     return YES;
 }
  
-- (IBAction)showPrizePressed:(id)sender	{
+- (IBAction)showAdPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
     
-    NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									 achievementTextView.text, @"achievement_id",
-									 nil];
-    
-    [[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
+    [[PaeDaeSDK sharedManager] showAd];
 }
 
-- (IBAction)level1Pressed:(id)sender	{
+- (IBAction)showBartrPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									 @"com.skymonkey.1000.earned", @"achievement_id",
-									 nil];
-    NSLog(@"%s - prize dictionary: %@", __FUNCTION__, prizeDictionary);
-	[[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.bartr_only", @"achievement_unique_id", nil];
+    [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
-- (IBAction)level2Pressed:(id)sender	{
+- (IBAction)showRewardPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									 @"com.skymonkey.20000.earned", @"achievement_id",
-									 nil];
-    NSLog(@"%s - prize dictionary: %@", __FUNCTION__, prizeDictionary);
-	[[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
-}
-
-- (IBAction)level3Pressed:(id)sender	{
-    NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *prizeDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-									 @"com.skymonkey.1000000.earned", @"achievement_id",
-									 nil];
-    NSLog(@"%s - prize dictionary: %@", __FUNCTION__, prizeDictionary);
-	[[PaeDaePrizeSDK sharedManager] showPrizeWithOptions:prizeDictionary andDelegate:self];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.rewards_only", @"achievement_unique_id", nil];
+    [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
 #pragma mark - update player information example
@@ -89,7 +70,7 @@
                                       @"123.567", @"latitude",
                                       @"-144.1234", @"longitude",
                                       nil];
-	[[PaeDaePrizeSDK sharedManager] updatePlayerInfo:playerDictionary];
+	[[PaeDaeSDK sharedManager] updatePlayerInfo:playerDictionary];
 }
 
 #pragma mark - hide keyboard when finished editing the achievement id
@@ -105,17 +86,17 @@
     return YES;
 }
 
-#pragma mark - paedae prize delegate
-- (void) PaeDae_PrizeWillDisplay:(UIView *)view {
-    NSLog(@"%s - prize will display", __FUNCTION__);
+#pragma mark - paedae ad delegate
+- (void) PaeDae_AdWillDisplay:(UIView *)view {
+    NSLog(@"%s - ad will display", __FUNCTION__);
 }
 
-- (void)PaeDae_PrizeUnloaded {
-	NSLog(@"%s - prize unloaded", __FUNCTION__);
+- (void)PaeDae_AdUnloaded {
+	NSLog(@"%s - ad unloaded", __FUNCTION__);
 }
 
-- (void)PaeDae_PrizeUnavailable {
-	NSLog(@"%s - prize unavailable", __FUNCTION__);
+- (void)PaeDae_AdUnavailable {
+	NSLog(@"%s - ad unavailable", __FUNCTION__);
 }
 
 @end

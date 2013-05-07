@@ -1,6 +1,6 @@
 //
-//  PaeDaePrizeSDK.h
-//  PaeDaePrizeSDK
+//  PaeDaeSDK.h
+//  PaeDaeSDK
 //
 //  Created by PaeDae on 8/13/12.
 //  Copyright (c) 2012 PaeDae. All rights reserved.
@@ -8,29 +8,30 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION @"0.3.7"
+#define PAEDAE_SDK_VERSION @"1.0.0"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
 @optional
 - (void) PaeDae_Initialized;
 - (void) PaeDae_InitializeFailed;
+- (void) PaeDae_Finished;
 @end
 
-#pragma mark - prize display delegate
-@protocol PaeDaePrizeDelegate <NSObject>
+#pragma mark - ad display delegate
+@protocol PaeDaeAdDelegate <NSObject>
 @optional
-- (void) PaeDae_PrizeUnavailable;
-- (void) PaeDae_PrizeWillDisplay:(UIView *)view;
-- (BOOL) PaeDae_PrizeWillUnload:(UIView *)view;
-- (void) PaeDae_PrizeUnloaded;
+- (void) PaeDae_AdUnavailable;
+- (void) PaeDae_AdWillDisplay:(UIView *)view;
+- (BOOL) PaeDae_AdWillUnload:(UIView *)view;
+- (void) PaeDae_AdUnloaded;
 @end
 
-@interface PaeDaePrizeSDK : NSObject
+@interface PaeDaeSDK : NSObject
 #pragma mark - shared manager
-+(PaeDaePrizeSDK *) sharedManager;
++(PaeDaeSDK *) sharedManager;
 
-#pragma mark - bootstrap API definitions
+#pragma mark - start session API definitions
 - (void) initWithKey:(NSString*)key;
 - (void) initWithKey:(NSString*)key andPlayerInfo:(NSDictionary*)playerInfo;
 - (void) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate;
@@ -39,12 +40,16 @@
 #pragma mark - update player info API definitions
 - (void) updatePlayerInfo:(NSDictionary*)playerInfo;
 
-#pragma mark - show prize API definitions
-- (void) showPrize;
-- (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary;
-- (void) showPrizeWithDelegate:(id <PaeDaePrizeDelegate>)delegate;
-- (void) showPrizeWithOptions:(NSDictionary*)prizeDictionary andDelegate:(id <PaeDaePrizeDelegate>)delegate;
+#pragma mark - show ad API definitions
+- (void) showAd;
+- (void) showAdWithOptions:(NSDictionary*)options;
+- (void) showAdWithDelegate:(id <PaeDaeAdDelegate>)delegate;
+- (void) showAdWithOptions:(NSDictionary*)options andDelegate:(id <PaeDaeAdDelegate>)delegate;
 
+#pragma mark - finish session API definitions
+- (void) finish;
+
+#pragma mark - misc undocumented methods
 - (void) setOrientation:(UIInterfaceOrientation) orientation;
 
 #pragma mark - support properties
@@ -54,8 +59,8 @@
 @property (nonatomic, assign) BOOL bootstrapped;
 @property (nonatomic, assign) BOOL enabled;
 @property (nonatomic, assign) BOOL apiAvailable;
-@property (nonatomic, retain) id <PaeDaeInitDelegate>initDelegate;
-@property (nonatomic, retain) id <PaeDaePrizeDelegate>prizeDelegate;
+@property (nonatomic, retain) id <PaeDaeInitDelegate> initDelegate;
+@property (nonatomic, retain) id <PaeDaeAdDelegate> adDelegate;
 @property (nonatomic, retain) UIViewController *controller;
 
 - (void) reloadWebCache;
