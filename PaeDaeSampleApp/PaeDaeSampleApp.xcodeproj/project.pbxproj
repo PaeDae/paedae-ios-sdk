@@ -26,7 +26,7 @@
 		966EA99F171A82FF0035380C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 966EA99E171A82FF0035380C /* Default-568h@2x.png */; };
 		966EA9A1171A83CD0035380C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EA9A0171A83CD0035380C /* main.m */; };
 		966EA9A5171A84710035380C /* libPaeDaeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 966EA9A3171A84270035380C /* libPaeDaeSDK.a */; };
-		966ED04E1738F7F00004CE0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645C44E16409B0B003D6753 /* AdSupport.framework */; };
+		966ED04E1738F7F00004CE0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645C44E16409B0B003D6753 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9691CE8C171A8EA2007AF965 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CE8A171A8EA2007AF965 /* ViewController.xib */; };
 		9691CE90171A8EA9007AF965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9691CE8E171A8EA9007AF965 /* InfoPlist.strings */; };
 		96ED3DE016640FCF003FEA94 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96ED3DDE16640FC6003FEA94 /* CoreLocation.framework */; };

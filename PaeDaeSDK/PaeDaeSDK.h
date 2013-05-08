@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION @"1.0.0"
+#define PAEDAE_SDK_VERSION @"1.0.1"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
@@ -45,9 +45,6 @@
 - (void) showAdWithOptions:(NSDictionary*)options;
 - (void) showAdWithDelegate:(id <PaeDaeAdDelegate>)delegate;
 - (void) showAdWithOptions:(NSDictionary*)options andDelegate:(id <PaeDaeAdDelegate>)delegate;
-
-#pragma mark - finish session API definitions
-- (void) finish;
 
 #pragma mark - misc undocumented methods
 - (void) setOrientation:(UIInterfaceOrientation) orientation;
