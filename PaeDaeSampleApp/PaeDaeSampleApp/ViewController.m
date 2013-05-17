@@ -43,7 +43,8 @@
 - (IBAction)showAdPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
     
-    [[PaeDaeSDK sharedManager] showAd];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:achievementTextView.text, @"achievement_unique_id", nil];
+    [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
 - (IBAction)showBartrPressed:(id)sender	{
