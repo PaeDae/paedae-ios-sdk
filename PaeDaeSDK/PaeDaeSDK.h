@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION @"1.0.2"
+#define PAEDAE_SDK_VERSION @"1.0.3"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>

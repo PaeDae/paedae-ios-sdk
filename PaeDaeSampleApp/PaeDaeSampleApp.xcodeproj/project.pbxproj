@@ -19,13 +19,13 @@
 		9600893D17385DA50085246D /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9600893C17385DA50085246D /* Default-Portrait@2x~ipad.png */; };
 		9600893F17385DAD0085246D /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9600893E17385DAD0085246D /* Default-Landscape~ipad.png */; };
 		9600894117385DB40085246D /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9600894017385DB40085246D /* Default-Landscape@2x~ipad.png */; };
+		9613FC16177961040009C344 /* libPaeDaeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 966EA9A3171A84270035380C /* libPaeDaeSDK.a */; };
 		96634A0817385BA8008AB659 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 96634A0717385BA8008AB659 /* 57x57.png */; };
 		96634A0A17385BAC008AB659 /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 96634A0917385BAC008AB659 /* 114x114.png */; };
 		966EA99C171A82B50035380C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EA999171A82B50035380C /* AppDelegate.m */; };
 		966EA99D171A82B50035380C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EA99B171A82B50035380C /* ViewController.m */; };
 		966EA99F171A82FF0035380C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 966EA99E171A82FF0035380C /* Default-568h@2x.png */; };
 		966EA9A1171A83CD0035380C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 966EA9A0171A83CD0035380C /* main.m */; };
-		966EA9A5171A84710035380C /* libPaeDaeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 966EA9A3171A84270035380C /* libPaeDaeSDK.a */; };
 		966ED04E1738F7F00004CE0A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9645C44E16409B0B003D6753 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9691CE8C171A8EA2007AF965 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691CE8A171A8EA2007AF965 /* ViewController.xib */; };
 		9691CE90171A8EA9007AF965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9691CE8E171A8EA9007AF965 /* InfoPlist.strings */; };
@@ -78,7 +78,7 @@
 				96ED3DE016640FCF003FEA94 /* CoreLocation.framework in Frameworks */,
 				843AA76615B85B0100A10D4E /* Foundation.framework in Frameworks */,
 				843AA76815B85B0100A10D4E /* CoreGraphics.framework in Frameworks */,
-				966EA9A5171A84710035380C /* libPaeDaeSDK.a in Frameworks */,
+				9613FC16177961040009C344 /* libPaeDaeSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
