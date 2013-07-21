@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION @"1.0.3"
+#define PAEDAE_SDK_VERSION @"1.0.4"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
@@ -21,6 +21,7 @@
 #pragma mark - ad display delegate
 @protocol PaeDaeAdDelegate <NSObject>
 @optional
+- (void) PaeDae_AdActionTaken;
 - (void) PaeDae_AdUnavailable;
 - (void) PaeDae_AdWillDisplay:(UIView *)view;
 - (BOOL) PaeDae_AdWillUnload:(UIView *)view;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241F4709179B50130013C146 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 241F4708179B50130013C146 /* JSONKit.m */; };
 		843AA76415B85B0100A10D4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA76315B85B0100A10D4E /* UIKit.framework */; };
 		843AA76615B85B0100A10D4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA76515B85B0100A10D4E /* Foundation.framework */; };
 		843AA76815B85B0100A10D4E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843AA76715B85B0100A10D4E /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		241F4707179B50130013C146 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = PaeDaeSampleApp/JSONKit.h; sourceTree = SOURCE_ROOT; };
+		241F4708179B50130013C146 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = PaeDaeSampleApp/JSONKit.m; sourceTree = SOURCE_ROOT; };
 		843AA75F15B85B0100A10D4E /* PaeDae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaeDae.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843AA76315B85B0100A10D4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		843AA76515B85B0100A10D4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,8 @@
 		843AA76915B85B0100A10D4E /* PaeDaeSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				241F4707179B50130013C146 /* JSONKit.h */,
+				241F4708179B50130013C146 /* JSONKit.m */,
 				966EA998171A82B50035380C /* AppDelegate.h */,
 				966EA999171A82B50035380C /* AppDelegate.m */,
 				966EA99A171A82B50035380C /* ViewController.h */,
@@ -238,6 +243,7 @@
 				966EA99C171A82B50035380C /* AppDelegate.m in Sources */,
 				966EA99D171A82B50035380C /* ViewController.m in Sources */,
 				966EA9A1171A83CD0035380C /* main.m in Sources */,
+				241F4709179B50130013C146 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

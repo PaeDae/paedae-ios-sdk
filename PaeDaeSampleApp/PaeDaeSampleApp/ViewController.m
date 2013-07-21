@@ -43,19 +43,19 @@
 - (IBAction)showAdPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
     
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:achievementTextView.text, @"achievement_unique_id", nil];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:achievementTextView.text, @"milestone_unique_id", nil];
     [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
 - (IBAction)showBartrPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.bartr_only", @"achievement_unique_id", nil];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.bartr_only", @"milestone_unique_id", nil];
     [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
 - (IBAction)showRewardPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.rewards_only", @"achievement_unique_id", nil];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.rewards_only", @"milestone_unique_id", nil];
     [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 

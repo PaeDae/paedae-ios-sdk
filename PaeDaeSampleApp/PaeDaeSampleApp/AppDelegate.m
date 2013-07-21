@@ -59,8 +59,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [[PaeDaeSDK sharedManager] finish];
-	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 - (void)PaeDae_Initialized	{
