@@ -47,18 +47,6 @@
     [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
-- (IBAction)showBartrPressed:(id)sender	{
-    NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.bartr_only", @"milestone_unique_id", nil];
-    [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
-}
-
-- (IBAction)showRewardPressed:(id)sender	{
-    NSLog(@"%s - called", __FUNCTION__);
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@"com.paedae.rewards_only", @"milestone_unique_id", nil];
-    [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
-}
-
 #pragma mark - update player information example
 - (IBAction)updateInformationPressed:(id)sender	{
     
