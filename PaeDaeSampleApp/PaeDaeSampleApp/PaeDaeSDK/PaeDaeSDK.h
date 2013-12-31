@@ -8,8 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION @"1.1.0"
-#define PAEDAE_DEBUG false
+#define PAEDAE_SDK_VERSION @"1.2.0"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
@@ -35,21 +34,13 @@
 
 #pragma mark - start session API definitions
 - (void) initWithKey:(NSString*)key;
-- (void) initWithKey:(NSString*)key andPlayerInfo:(NSDictionary*)playerInfo;
 - (void) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate;
-- (void) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate andPlayerInfo:(NSDictionary*)playerInfo;
-
-#pragma mark - update player info API definitions
-- (void) updatePlayerInfo:(NSDictionary*)playerInfo;
 
 #pragma mark - show ad API definitions
 - (void) showAd;
 - (void) showAdWithOptions:(NSDictionary*)options;
 - (void) showAdWithDelegate:(id <PaeDaeAdDelegate>)delegate;
 - (void) showAdWithOptions:(NSDictionary*)options andDelegate:(id <PaeDaeAdDelegate>)delegate;
-
-#pragma mark - misc undocumented methods
-- (void) setOrientation:(UIInterfaceOrientation) orientation;
 
 #pragma mark - support properties
 @property (nonatomic, retain) UIView *anchorView;
@@ -64,5 +55,8 @@
 
 - (void) reloadWebCache;
 - (void) clearHistory;
+
+extern BOOL PDDEBUG;
+
 @end
 

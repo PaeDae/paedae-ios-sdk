@@ -10,15 +10,11 @@
 @interface ViewController : UIViewController <PaeDaeAdDelegate, UITextFieldDelegate>
 {
     UILabel *statusLabel;
-    IBOutlet UITextField *achievementTextView;
+    IBOutlet UITextField *zoneSlugTextView;
 }
 
 - (IBAction) showAdPressed:(id)sender;
-- (IBAction) showBartrPressed:(id)sender;
-- (IBAction) showRewardPressed:(id)sender;
-- (IBAction) updateInformationPressed:(id)sender;
-
 @property (nonatomic, retain) IBOutlet UILabel *statusLabel;
-@property (nonatomic, retain) IBOutlet UITextField *achievementTextView;  
+@property (nonatomic, retain) IBOutlet UITextField *zoneSlugTextView;
 
 @end

@@ -12,7 +12,7 @@
 
 @implementation ViewController
 @synthesize statusLabel;
-@synthesize achievementTextView;
+@synthesize zoneSlugTextView;
 
 - (void) viewDidAppear:(BOOL)animated
 {
@@ -43,27 +43,12 @@
 - (IBAction)showAdPressed:(id)sender	{
     NSLog(@"%s - called", __FUNCTION__);
     
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:achievementTextView.text, @"milestone_unique_id", nil];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:zoneSlugTextView.text, @"zone_slug", nil];
     [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
-#pragma mark - update player information example
-- (IBAction)updateInformationPressed:(id)sender	{
-    
-	NSDictionary *playerDictionary = [NSDictionary dictionaryWithObjectsAndKeys:
-                                      @"junk@junk.com", @"email",
-                                      @"My Name", @"name",
-                                      @"2/25/1901", @"birthdate",
-                                      @"male", @"gender",
-                                      @"90019", @"zipcode",
-                                      @"123.567", @"latitude",
-                                      @"-144.1234", @"longitude",
-                                      nil];
-	[[PaeDaeSDK sharedManager] updatePlayerInfo:playerDictionary];
-}
-
-#pragma mark - hide keyboard when finished editing the achievement id
-- (IBAction) onAchievementIdEdited:(UITextField *)textField 
+#pragma mark - hide keyboard when finished editing the text field
+- (IBAction) onZoneSlugEdited:(UITextField *)textField
 {
     [textField resignFirstResponder];
 }
@@ -87,5 +72,4 @@
 - (void)PaeDae_AdUnavailable {
 	NSLog(@"%s - ad unavailable", __FUNCTION__);
 }
-
 @end
