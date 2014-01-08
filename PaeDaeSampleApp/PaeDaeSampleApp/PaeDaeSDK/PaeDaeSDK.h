@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#define PAEDAE_SDK_VERSION @"1.2.0"
+#define PAEDAE_SDK_VERSION @"2.1.0"
 
 #pragma mark - init delegate
 @protocol PaeDaeInitDelegate <NSObject>
@@ -33,8 +33,8 @@
 +(PaeDaeSDK *) sharedManager;
 
 #pragma mark - start session API definitions
-- (void) initWithKey:(NSString*)key;
-- (void) initWithKey:(NSString*)key andDelegate:(id <PaeDaeInitDelegate>)delegate;
+- (void) initWithAppId:(NSString*)appId;
+- (void) initWithAppId:(NSString*)appId andDelegate:(id <PaeDaeInitDelegate>)delegate;
 
 #pragma mark - show ad API definitions
 - (void) showAd;

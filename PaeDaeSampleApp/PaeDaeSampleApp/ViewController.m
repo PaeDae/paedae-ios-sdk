@@ -12,7 +12,7 @@
 
 @implementation ViewController
 @synthesize statusLabel;
-@synthesize zoneSlugTextView;
+@synthesize zoneIdTextView;
 
 - (void) viewDidAppear:(BOOL)animated
 {
@@ -40,10 +40,11 @@
     return YES;
 }
  
-- (IBAction)showAdPressed:(id)sender	{
+- (IBAction)showAdPressed:(id)sender
+{
     NSLog(@"%s - called", __FUNCTION__);
     
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:zoneSlugTextView.text, @"zone_slug", nil];
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:zoneIdTextView.text, @"zone_id", nil];
     [[PaeDaeSDK sharedManager] showAdWithOptions:options andDelegate:self];
 }
 
@@ -54,22 +55,26 @@
 }
 
 #pragma mark - uitextfield delegate
--(BOOL) textFieldShouldReturn:(UITextField*) textField {
+-(BOOL) textFieldShouldReturn:(UITextField*) textField
+{
     NSLog(@"%s - called", __FUNCTION__);
     [textField resignFirstResponder]; 
     return YES;
 }
 
 #pragma mark - paedae ad delegate
-- (void) PaeDae_AdWillDisplay:(UIView *)view {
+- (void) PaeDae_AdWillDisplay:(UIView *)view
+{
     NSLog(@"%s - ad will display", __FUNCTION__);
 }
 
-- (void)PaeDae_AdUnloaded {
+- (void)PaeDae_AdUnloaded
+{
 	NSLog(@"%s - ad unloaded", __FUNCTION__);
 }
 
-- (void)PaeDae_AdUnavailable {
+- (void)PaeDae_AdUnavailable
+{
 	NSLog(@"%s - ad unavailable", __FUNCTION__);
 }
 @end

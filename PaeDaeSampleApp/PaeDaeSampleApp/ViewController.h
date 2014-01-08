@@ -10,11 +10,11 @@
 @interface ViewController : UIViewController <PaeDaeAdDelegate, UITextFieldDelegate>
 {
     UILabel *statusLabel;
-    IBOutlet UITextField *zoneSlugTextView;
+    IBOutlet UITextField *zoneIdTextView;
 }
 
 - (IBAction) showAdPressed:(id)sender;
 @property (nonatomic, retain) IBOutlet UILabel *statusLabel;
-@property (nonatomic, retain) IBOutlet UITextField *zoneSlugTextView;
+@property (nonatomic, retain) IBOutlet UITextField *zoneIdTextView;
 
 @end
