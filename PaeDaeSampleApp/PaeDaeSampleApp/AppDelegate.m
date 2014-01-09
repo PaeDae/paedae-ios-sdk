@@ -26,8 +26,8 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
 	
-    PDDEBUG = YES;
-	[[PaeDaeSDK sharedManager] initWithAppId:@"52a976a461707032c7ea0500" andDelegate:self];
+    //PDDEBUG = YES;
+	[[PaeDaeSDK sharedManager] initWithAppId:@"app id goes here" andDelegate:self];
 
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
 	self.window.rootViewController = self.viewController;
